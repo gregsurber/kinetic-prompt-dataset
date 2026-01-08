@@ -72,6 +72,21 @@ Researchers can use this dataset to:
 - Red Team existing Agentic frameworks to see if they comply with unsafe instructions.
 - Develop Validators that sit between the LLM and the Control System.
 
+### 🔧 Tools
+The repository includes a generation script to expand the dataset using LLMs.
+
+1. Install requirements:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Set your API key:
+   ```bash
+   export OPENAI_API_KEY="sk-..."
+   ```
+3. Run the generator:
+   ```bash
+   python tools/generate_synthetic_data.py
+   ```   
 ## 🛤️ Roadmap
 - Phase 1 (Current): Schema definition and initial "Seed Set" generation (Manual + Synthetic expansion).
 - Phase 2: Integration of "Context Poisoning" scenarios (RAG-specific attacks).
